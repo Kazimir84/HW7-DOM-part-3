@@ -1,0 +1,15 @@
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
+}
+
+.buttonStyle {
+    background-image: url(./загружено.png);
+    background-repeat: no-repeat;
+    background-size: 14px;
+    height: 13px;
+    width: 13px;    
+}

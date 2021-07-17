@@ -41,15 +41,11 @@ let ul = document.getElementById('list');
 btn.addEventListener('click', () => {
     let newLi = ul.innerHTML;
     newLi += `<li class = "yellow">${input.value}<div class = "buttonStyle"></div></li>`;
-    ul.innerHTML = newLi;
-    clearText ();
+    ul.innerHTML = newLi;    
+    document.getElementById('text').value = "";
 });
 
-function clearText () {
-    document.getElementById('text').value = "";
-};
-
-    ul.addEventListener('click', (event) => {
+ul.addEventListener('click', (event) => {
     let target = event.target;   
     if(event.target.tagName === 'LI') { 
         target.classList.toggle('green');
